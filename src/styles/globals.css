@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.login-bg {
+  background-image: url('/images/bg.jpg');  
+}
+.admin-bg {
+  background-image: url('/images/bg2.jpg');  
+}
+.auth-form-label {
+  color: white;
+  text-shadow: 2px 2px #999;
+}
+
+.ant-menu-item-selected {
+  background-color: rgba(255, 255, 255, 0.19) !important;
+}
+.ant-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.19) !important;
+}
+.css-dev-only-do-not-override-8hy14p.ant-statistic .ant-statistic-title { 
+  color: #fff !important; 
+  font-size: 14pt;
+  text-shadow: 1px 1px #999;
+}
+.main-btn {
+  @apply text-white bg-red-600 hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+.cancel-btn {
+  @apply text-white bg-green-600 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+.edit-btn {
+  @apply text-white bg-yellow-500 hover:bg-yellow-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-3 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+.delete-btn {
+  @apply text-white bg-red-500 hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-3 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+.success-btn {
+  @apply text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-3 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+.primary-btn {
+  @apply text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-3 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+.main-input {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-gray-600 focus:border-gray-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+/* Modal Loading */
+
+.loader-dots div {
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.loader-dots div:nth-child(1) {
+  left: 8px;
+  animation: loader-dots1 0.6s infinite;
+}
+.loader-dots div:nth-child(2) {
+  left: 8px;
+  animation: loader-dots2 0.6s infinite;
+}
+.loader-dots div:nth-child(3) {
+  left: 32px;
+  animation: loader-dots2 0.6s infinite;
+}
+.loader-dots div:nth-child(4) {
+  left: 56px;
+  animation: loader-dots3 0.6s infinite;
+}
+@keyframes loader-dots1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes loader-dots3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes loader-dots2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+.css-dev-only-do-not-override-8hy14p.ant-tabs-card >.ant-tabs-nav .ant-tabs-tab, .css-dev-only-do-not-override-8hy14p.ant-tabs-card >div>.ant-tabs-nav .ant-tabs-tab {
+  margin: 0;
+  padding: 8px 16px;
+  color: white;
+  background-image: linear-gradient(#ff5555, #ff8888);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.css-dev-only-do-not-override-8hy14p.ant-tabs-card >.ant-tabs-nav .ant-tabs-tab-active, .css-dev-only-do-not-override-8hy14p.ant-tabs-card >div>.ant-tabs-nav .ant-tabs-tab-active {
+  color: #ffffff;
+  background-image: linear-gradient(#ff2222, #ff6666);
+  text-decoration: none;
+}
+.css-dev-only-do-not-override-8hy14p.ant-tabs-card >.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #fff;
+}
+.ant-tabs ant-tabs-top ant-tabs-card css-dev-only-do-not-override-8hy14p {
+  padding: 5px;
+}
+.table-row-active {
+  background-color: green;
+}
+.table-row-inactive {
+  background-color: transparent;
+}
+.ant-table-tbody .ant-table-row:nth-child(even) {
+  background-color: green;
+}
+.ant-checkbox css-dev-only-do-not-override-8hy14p {
+  display: none;
+}
+.shadow-1 {
+  text-shadow: 1px 1px gray;
+}
+.shadow-2 {
+  text-shadow: 2px 2px gray;
+}
+.w-special {
+  width: 62rem;  
+  position: relative;
+  right: -140px;
+}
